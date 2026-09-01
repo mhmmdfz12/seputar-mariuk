@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seputar Mariuk — Kampung Mariuk, Keindahan Alam & Budaya</title>
+  <meta name="description"
+    content="Jelajahi keindahan alam, budaya, dan kehangatan masyarakat Kampung Mariuk. Sawah hijau, pegunungan megah, dan tradisi yang masih lestari." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===== Page Loader ===== -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo-wrapper">
+      <img src="logo.png" alt="Logo Seputar Mariuk" class="loader-logo" />
+    </div>
+    <div class="loader-text">Seputar Mariuk</div>
+  </div>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="logo.png" alt="Logo Seputar Mariuk" class="brand-logo" />
+        Seputar Mariuk
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active" data-nav>Beranda</a></li>
+        <li><a href="#about" data-nav>Tentang</a></li>
+        <li><a href="#gallery" data-nav>Galeri</a></li>
+        <li><a href="#contact" data-nav>Kontak</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/bgfiks.jpg" alt="Pemandangan Gunung dan Sawah Kampung Mariuk" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Selamat Datang</div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Jelajahi Keindahan<br />
+        <span class="highlight">Kampung Mariuk</span>
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Nikmati pesona alam pegunungan, hamparan sawah hijau, dan
+        kehangatan budaya masyarakat yang masih terjaga
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#gallery" class="btn btn-primary">
+          <i class="fas fa-images"></i> Lihat Galeri
+        </a>
+        <a href="#about" class="btn btn-outline">
+          <i class="fas fa-info-circle"></i> Tentang Kami
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal">
+          <div class="about-image">
+            <img src="images/p1.jpg" alt="Pemandangan Sawah Kampung Mariuk saat Sunset" />
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-label reveal">Tentang Kami</span>
+          <h2 class="section-title reveal reveal-delay-1">
+            Kampung Mariuk, Pesona Alam yang Memikat Hati
+          </h2>
+          <p class="about-text reveal reveal-delay-2">
+            Kampung Mariuk adalah sebuah kampung yang terletak di kaki gunung
+            dengan pemandangan alam yang memesona. Dikelilingi oleh hamparan
+            sawah hijau dan pegunungan yang megah, kampung ini menawarkan
+            kedamaian dan keindahan yang sulit ditemukan di tempat lain.
+            Masyarakatnya ramah, budayanya kental, dan tradisinya masih
+            lestari hingga saat ini.
+          </p>
+          <div class="about-features reveal reveal-delay-3">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <h4>Alam Indah</h4>
+              <p>Pemandangan gunung dan sawah yang memukau</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-masks-theater"></i>
+              </div>
+              <h4>Budaya Kaya</h4>
+              <p>Tradisi dan adat istiadat yang masih lestari</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-hands-holding-child"></i>
+              </div>
+              <h4>Ramah Tamah</h4>
+              <p>Keramahan penduduk yang hangat menyambut</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <h4>Pertanian</h4>
+              <p>Hasil bumi yang melimpah dan subur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Gallery Section ===== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Galeri Foto</span>
+        <h2 class="section-title reveal reveal-delay-1">
+          Potret Kehidupan Kampung Mariuk
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Momen-momen indah yang terabadikan dari alam dan keseharian
+          masyarakat Kampung Mariuk
+        </p>
+      </div>
+
+      <div class="gallery-tabs reveal">
+        <button class="gallery-tab active" data-filter="all">Semua</button>
+        <button class="gallery-tab" data-filter="alam">Alam</button>
+        <button class="gallery-tab" data-filter="budaya">Budaya</button>
+        <button class="gallery-tab" data-filter="jalan-santai">Jalan Santai</button>
+        <button class="gallery-tab" data-filter="perlombaan">Perlombaan</button>
+        <button class="gallery-tab" data-filter="pentas-seni">Pentas Seni</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- === ALAM === -->
+        <div class="gallery-item tall" data-category="alam" data-src="images/p1.jpg"
+          data-caption="Sunset di Hamparan Sawah" data-anim="fade-up">
+          <img src="images/p1.jpg" alt="Sunset di Hamparan Sawah Kampung Mariuk" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Sunset di Sawah</h4>
+              <p>Keindahan senja di hamparan sawah</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="alam" data-src="images/p2.jpg"
+          data-caption="Sawah Hijau di Bawah Awan" data-anim="fade-left">
+          <img src="images/p2.jpg" alt="Sawah Hijau dengan Burung Terbang" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Sawah &amp; Awan</h4>
+              <p>Keindahan alam yang menyejukkan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item short" data-category="alam" data-src="images/gambar bg.jpg"
+          data-caption="Pagi di Kampung Mariuk" data-anim="fade-right">
+          <img src="images/gambar bg.jpg" alt="Pagi di Kampung Mariuk" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Pagi Hari</h4>
+              <p>Suasana pagi yang menenangkan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- === ALAM / KEGIATAN WARGA === -->
+        <div class="gallery-item short" data-category="alam" data-src="images/g3.jpg"
+          data-caption="Keakraban Warga Kampung Mariuk" data-anim="fade-left">
+          <img src="images/g3.jpg" alt="Keakraban Warga Kampung" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Keakraban Warga</h4>
+              <p>Kehangatan persaudaraan kampung</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="jalan-santai" data-src="images/g1.jpg"
+          data-caption="Kegiatan Warga Kampung Mariuk" data-anim="zoom-in">
+          <img src="images/g1.jpg" alt="Kegiatan Warga Kampung Mariuk" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Kegiatan Warga</h4>
+              <p>Kebersamaan masyarakat kampung</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="jalan-santai" data-src="images/g2.jpg"
+          data-caption="Perayaan dan Karnaval Kampung" data-anim="fade-up">
+          <img src="images/g2.jpg" alt="Karnaval Kampung Mariuk" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Karnaval Kampung</h4>
+              <p>Perayaan meriah warga Mariuk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- === JALAN SANTAI (7 foto) === -->
+        <div class="gallery-item tall" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/2.png"
+          data-caption="Jalan Santai HUT RI - Warga Berkebaya" data-anim="fade-right">
+          <img src="images/Feeds Jalan Santai/2.png" alt="Jalan Santai HUT RI - Warga Berkebaya" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Warga Berkebaya</h4>
+              <p>Jalan santai HUT RI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/3.png"
+          data-caption="Jalan Santai HUT RI - Semarak Kemerdekaan" data-anim="zoom-in">
+          <img src="images/Feeds Jalan Santai/3.png" alt="Jalan Santai - Semarak Kemerdekaan" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Semarak Kemerdekaan</h4>
+              <p>Warga memeriahkan jalan santai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/4.png"
+          data-caption="Jalan Santai HUT RI - Kebersamaan Warga" data-anim="fade-up">
+          <img src="images/Feeds Jalan Santai/4.png" alt="Jalan Santai - Kebersamaan Warga" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Kebersamaan Warga</h4>
+              <p>Bersama merayakan kemerdekaan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/5.png"
+          data-caption="Jalan Santai HUT RI - Arak-arakan" data-anim="fade-left">
+          <img src="images/Feeds Jalan Santai/5.png" alt="Jalan Santai - Arak-arakan" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Arak-arakan</h4>
+              <p>Pawai menyusuri kampung</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item short" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/6.png"
+          data-caption="Jalan Santai HUT RI - Bendera Merah Putih" data-anim="fade-right">
+          <img src="images/Feeds Jalan Santai/6.png" alt="Jalan Santai - Bendera Merah Putih" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Merah Putih</h4>
+              <p>Semangat kemerdekaan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/7.png"
+          data-caption="Jalan Santai HUT RI - Ibu-ibu PKK" data-anim="zoom-in">
+          <img src="images/Feeds Jalan Santai/7.png" alt="Jalan Santai - Ibu-ibu PKK" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Ibu-ibu PKK</h4>
+              <p>Kompak dan semangat</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="jalan-santai" data-src="images/Feeds Jalan Santai/8.png"
+          data-caption="Jalan Santai HUT RI - Meriahnya Kampung" data-anim="fade-up">
+          <img src="images/Feeds Jalan Santai/8.png" alt="Jalan Santai - Meriahnya Kampung" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Meriahnya Kampung</h4>
+              <p>Warga bersuka ria</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- === PERLOMBAAN (2 foto) === -->
+        <div class="gallery-item tall" data-category="perlombaan" data-src="images/Feeds Perlombaan/5.png"
+          data-caption="Perlombaan HUT RI - Sepeda Hias" data-anim="fade-left">
+          <img src="images/Feeds Perlombaan/5.png" alt="Perlombaan - Sepeda Hias" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Sepeda Hias</h4>
+              <p>Lomba kreativitas anak-anak</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="perlombaan" data-src="images/Feeds Perlombaan/6.png"
+          data-caption="Perlombaan HUT RI - Peserta Lomba" data-anim="fade-right">
+          <img src="images/Feeds Perlombaan/6.png" alt="Perlombaan - Peserta Lomba" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Peserta Lomba</h4>
+              <p>Semangat berkompetisi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- === PENTAS SENI (8 foto) === -->
+        <div class="gallery-item tall" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/2.png"
+          data-caption="Pentas Seni HUT RI - Tarian Anak-anak" data-anim="zoom-in">
+          <img src="images/Feeds Pentas Seni/2.png" alt="Pentas Seni - Tarian Anak-anak" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Tarian Anak-anak</h4>
+              <p>Semarak kemerdekaan HUT RI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/3.png"
+          data-caption="Pentas Seni HUT RI - Pertunjukan Panggung" data-anim="fade-up">
+          <img src="images/Feeds Pentas Seni/3.png" alt="Pentas Seni - Pertunjukan Panggung" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Pertunjukan Panggung</h4>
+              <p>Bakat warga Mariuk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item short" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/4.png"
+          data-caption="Pentas Seni HUT RI - Penampilan Kreatif" data-anim="fade-left">
+          <img src="images/Feeds Pentas Seni/4.png" alt="Pentas Seni - Penampilan Kreatif" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Penampilan Kreatif</h4>
+              <p>Kreativitas generasi muda</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/5.png"
+          data-caption="Pentas Seni HUT RI - Tari Tradisional" data-anim="fade-right">
+          <img src="images/Feeds Pentas Seni/5.png" alt="Pentas Seni - Tari Tradisional" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Tari Tradisional</h4>
+              <p>Melestarikan budaya</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/6.png"
+          data-caption="Pentas Seni HUT RI - Aksi Panggung" data-anim="zoom-in">
+          <img src="images/Feeds Pentas Seni/6.png" alt="Pentas Seni - Aksi Panggung" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Aksi Panggung</h4>
+              <p>Menghibur warga kampung</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item medium" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/7.png"
+          data-caption="Pentas Seni HUT RI - Penyanyi Cilik" data-anim="fade-up">
+          <img src="images/Feeds Pentas Seni/7.png" alt="Pentas Seni - Penyanyi Cilik" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Penyanyi Cilik</h4>
+              <p>Talenta muda kampung</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item short" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/8.png"
+          data-caption="Pentas Seni HUT RI - Fashion Show" data-anim="fade-left">
+          <img src="images/Feeds Pentas Seni/8.png" alt="Pentas Seni - Fashion Show" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Fashion Show</h4>
+              <p>Gaya unik warga Mariuk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="pentas-seni" data-src="images/Feeds Pentas Seni/9.png"
+          data-caption="Pentas Seni HUT RI - Penutupan Acara" data-anim="fade-right">
+          <img src="images/Feeds Pentas Seni/9.png" alt="Pentas Seni - Penutupan Acara" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-info">
+              <h4>Penutupan Acara</h4>
+              <p>Momen akhir yang meriah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Parallax Quote Section ===== -->
+  <section class="parallax-section">
+    <div class="parallax-bg">
+      <img src="images/bg2.jpg" alt="Parallax Background" />
+    </div>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content reveal">
+      <p class="parallax-quote">
+        Di Kampung Mariuk, setiap pagi disambut embun pegunungan, setiap
+        senja dihiasi langit keemasan, dan setiap senyum warganya
+        menghangatkan hati.
+      </p>
+      <p class="parallax-author">Kampung Mariuk</p>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label reveal">Hubungi Kami</span>
+          <h2 class="section-title reveal reveal-delay-1">
+            Mari Berkunjung ke Kampung Mariuk
+          </h2>
+          <p class="contact-text reveal reveal-delay-2">
+            Ingin mengetahui lebih banyak tentang Kampung Mariuk atau
+            berencana berkunjung? Jangan ragu untuk menghubungi kami.
+          </p>
+          <div class="contact-details reveal reveal-delay-3">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4>Lokasi</h4>
+                <p>Kampung Mariuk, Maripari, Sukawening, Garut, Jawa Barat, Indonesia</p>
+              </div>
+            </div>
+            <a href="https://www.instagram.com/seputar_mariuk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank" class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div class="contact-item-text">
+                <h4>Instagram</h4>
+                <p>@seputar_mariuk</p>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+        <div class="contact-map reveal reveal-delay-2">
+          <a href="https://www.google.com/maps?q=-7.127901,107.984773" target="_blank" class="map-link"
+            aria-label="Buka di Google Maps">
+            <iframe src="https://maps.google.com/maps?q=-7.127901,107.984773&z=15&t=k&output=embed" width="100%"
+              height="100%" style="border:0; pointer-events: none;" allowfullscreen="" loading="lazy"
+              title="Lokasi Kampung Mariuk">
+            </iframe>
+            <div class="map-overlay-btn">
+              <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="logo.png" alt="Logo Seputar Mariuk" class="brand-logo" /> Seputar Mariuk
+          </div>
+          <p class="footer-desc">
+            Portal informasi dan dokumentasi keindahan alam, budaya, dan
+            kehidupan masyarakat Kampung Mariuk.
+          </p>
+        </div>
+        <div>
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Beranda</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Tentang</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Galeri</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right" style="font-size:0.6rem"></i> Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul class="footer-links">
+            <li><a
+                href="https://www.instagram.com/seputar_mariuk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><i class="fab fa-instagram" style="font-size:0.85rem"></i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Seputar Mariuk. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Back to Top ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Selanjutnya">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <img src="" alt="Gallery Image" id="lightboxImg" />
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
